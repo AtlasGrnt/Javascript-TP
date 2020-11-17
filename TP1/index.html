@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Conversion de devises</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="index.js"></script>
+</head>
+<body>
+    <h1>Mon Convertisseur de devises</h1>
+    <div class="container">
+        <div class="card">
+            <form>
+                <div class="form-group">
+                  <label for="montant">Entrez le montant à convertir</label>
+                  <input type="number" name="montant" class="form-control" id="montant" >
+                </div>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" name="devise" id="deviseEUR" value="EUR">
+                  <label class="form-check-label" for="deviseEUR">en €</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="devise" id="deviseFRF" value="FRF">
+                    <label class="form-check-label" for="deviseFRF">en FRF</label>
+                  </div>
+                <input type="button" value="Convertir" class="btn btn-success" onclick="convertir()">
+              </form>
+              <div id="text">
+
+              </div>
+        </div>
+    </div>
+</body>
+</html>
